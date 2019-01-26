@@ -1,4 +1,4 @@
-!SESSION 2019-01-26 12:55:02.532 -----------------------------------------------
+!SESSION 2019-01-26 14:39:16.208 -----------------------------------------------
 eclipse.buildId=4.8.0.I20180611-0500
 java.version=1.8.0_181
 java.vendor=Oracle Corporation
@@ -6,7 +6,7 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-!ENTRY org.eclipse.egit.core 2 0 2019-01-26 12:55:32.243
+!ENTRY org.eclipse.egit.core 2 0 2019-01-26 14:39:23.024
 !MESSAGE Builtin LFS support not present/detected
 !STACK 0
 java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be found by org.eclipse.egit.core_5.0.0.201806131550-r
