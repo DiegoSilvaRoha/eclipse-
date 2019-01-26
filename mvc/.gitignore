@@ -1,1 +1,12 @@
-/bin/
+.DS_Store
+.cache-main
+.classpath
+.project
+.settings/
+bin/
+project/
+target/
+.idea/
+build-old.sbt
+out/
+*.iml
