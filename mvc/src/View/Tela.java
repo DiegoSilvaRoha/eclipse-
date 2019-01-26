@@ -12,7 +12,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class PrimeiraTela {
+public class Tela {
 
 	private JFrame frame;
 	private JTextField textField;
@@ -21,10 +21,31 @@ public class PrimeiraTela {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
+		
+		//LookAndFeel - mundando a aparencia
+		 try {
+	            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+	                if ("Nimbus".equals(info.getName())) {
+	                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+	                    break;
+	                }
+	            }
+	        } catch (ClassNotFoundException ex) {
+	        	//fluxo de saída é usado para exibir mensagens de erro ou outras informações que devem vir 
+	            System.err.println(ex);
+	        } catch (InstantiationException ex) {
+	        	 System.err.println(ex);;
+	        } catch (IllegalAccessException ex) {
+	        	 System.err.println(ex);;
+	        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+	        	 System.err.println(ex);;
+	        }
+		
+		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					PrimeiraTela window = new PrimeiraTela();
+					Tela window = new Tela();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -36,10 +57,11 @@ public class PrimeiraTela {
 	/**
 	 * Create the application.
 	 */
-	public PrimeiraTela() {
+	public Tela() {
 		initialize();
 	}
 
+	
 	/**
 	 * Initialize the contents of the frame.
 	 */
@@ -50,7 +72,7 @@ public class PrimeiraTela {
 		frame.getContentPane().setLayout(null);
 
 		textField = new JTextField();
-		textField.setBounds(108, 112, 205, 20);
+		textField.setBounds(108, 112, 205, 30);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
 
