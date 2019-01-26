@@ -58,7 +58,7 @@ public class PrimeiraTela {
 		btnMostrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0){
 				
-				JOptionPane.showMessageDialog(null,"Nome: "+textField.getText());
+				JOptionPane.showMessageDialog(null,"Nome:"+textField.getText());
 				
 			}
 		});
