@@ -73,7 +73,8 @@ public class Login {
 				if (checkLogin(textField_1.getText(), new String(textField.getText()))) {
 					JOptionPane.showMessageDialog(null,"Bem-vindo ao Sistema");
 				}else{
-						JOptionPane.showMessageDialog(null,"Autenticação Incorreta"); 
+					//INFORMATION_MESSAGE - (por default) mas posso usar WARNING_MESSAGE
+						JOptionPane.showMessageDialog(null,"Autenticação Incorreta", "Titulo", JOptionPane.WARNING_MESSAGE); 
 					}
 				}
 			});
